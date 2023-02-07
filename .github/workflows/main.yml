@@ -1,6 +1,4 @@
 name: practica_env
-## acciona el action cuando se realiza un push o un 
-## pull_request en la rama principal
 on: [pull_request, push]
 env:
   API_KEY: ARXPZTFVLGRIJK
@@ -9,13 +7,11 @@ env:
     runs-on: ubuntu-latest
     steps:
       - name: paso 1
-        ## la siguiente linea imprime la variable de entorno API-KEY definida a nivel workflow
-        run: echo 'La API KEY es:${{env.API_KEY}}'
+        run: echo "La API KEY es:${{env.API_KEY}}"
   job2:
     runs-on: ubuntu-latest
     steps:
       - name: paso 1
-        ## la siguiente linea imprime la variable de entorno API-KEY definida en el worflow pero de la otra forma
-        run: echo 'La API KEY es:$API_KEY'
+        run: echo "La API KEY es:$API_KEY"
 
 
