@@ -7,7 +7,7 @@ env:
     runs-on: ubuntu-latest
     steps:
       - name: paso 1
-        run: echo "La API KEY es: ${{ env.API_KEY }}"
+        run: echo "La API KEY es: ${{env.API_KEY}}"
   job2:
     runs-on: ubuntu-latest
     steps:
