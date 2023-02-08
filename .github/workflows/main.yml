@@ -2,7 +2,7 @@ name: practica_env
 on: [pull_request, push]
 env:
   API_KEY: ARXPZTFVLGRIJK
-
+jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
