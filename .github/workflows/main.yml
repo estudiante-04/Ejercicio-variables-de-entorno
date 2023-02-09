@@ -4,11 +4,9 @@ on: [pull_request, push]
 jobs:
   job1:
     runs-on: ubuntu-latest
-    env:
-      API_KEY: ARXPZTFVLGRIJK
     steps:
       - name: step 1
-        run: echo "The API key is ${{env.API_KEY}}"
+        run: echo "The API key is ${{secrets.API_KEY}}"
   job2:
     runs-on: ubuntu-latest
     steps:
